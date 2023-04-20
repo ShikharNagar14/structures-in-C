@@ -1,0 +1,121 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+// STRUCTURES
+// struct student{
+//     int roll;
+//     char name[100];
+//     float cgpa;
+// };
+// int main(){
+//     struct student s1;
+//     struct student s2;
+
+//     s1.roll=2;
+//     strcpy(s1.name,"Shikhar");
+//     s1.cgpa=9.5;
+//     printf("%d %s %.1f\n",s1.roll,s1.name,s1.cgpa);
+//     s2.roll=10;
+//     strcpy(s2.name,"Puneet ");
+//     s2.cgpa=9.5;
+//     printf("%d %s %.1f",s2.roll,s2.name,s2.cgpa);
+
+//     return 0;
+
+// }
+
+// struct point
+// {
+//     int x;
+//     int y;
+// };
+// int main()
+// {
+//     struct point p1, p2;
+//     printf("Enter point:");
+//     scanf("%d%d", &p1.x, &p1.y);
+//     //printf("Enter point:");
+//     //scanf("%d%d", &p2.x, &p2.y);
+//   //  float dis = sqrt(pow((p1.x - p2.x), 2) + pow(p1.y - p2.y, 2));
+//   float dis=pow(p1.x,2)+pow(p1.y,2)+2*p1.x*p1.y;
+//     printf("square of x and y: %.2f", dis);
+// }
+
+// type def is used to make it custom datatype
+
+// typedef struct point
+// {
+//     int x;
+//     int y;
+// }student;
+// int main()
+// {
+//     student p1, p2;
+//     printf("Enter point:");
+//     scanf("%d%d", &p1.x, &p1.y);
+//     printf("Enter point:");
+//     scanf("%d%d", &p2.x, &p2.y);
+//     float dis = sqrt(pow((p1.x - p2.x), 2) + pow(p1.y - p2.y, 2));
+//     printf("Distance between two pints: %.2f", dis);
+// }
+
+// typedef struct point
+// {
+//     int roll;
+//     char name[100];
+//     float cgpa;
+// }student;
+// int main()
+// {
+
+//     student s={10,"Shikhar",9.5};
+//     printf("%d %s %.1f",s.roll,s.name,s.cgpa);
+// }
+
+// Desinated initialization
+// typedef struct student {
+//     int roll;
+//     char name[100];
+//     float cgpa;
+
+// }student;
+// int main(){
+//     student s={.roll=10,.name="Shikhar",.cgpa=10};
+//     printf("%d %s %.1f",s.roll,s.name,s.cgpa);
+// }
+
+// typedef struct student {
+//     int roll;
+//     char name[100];
+//     float cgpa;
+// }student;
+// int main(){
+//     student s[3];
+//     for(int i=0;i<3;i++){
+//         s[i].roll=i+1;
+//         s[i].cgpa=i+2.5;
+
+//     }
+//     for(int i=0; i<3; i++){
+//     printf("%d  %.1f\n",s[i].roll,s[i].cgpa);
+
+// }
+// }
+// typedef struct complex
+// {
+//     int x;
+//     int y;
+
+// } complex;
+// int main()
+// {
+//     complex c1, c2;
+//     printf("Enter first number:");
+//     scanf("%d%d", &c1.x, &c1.y);
+//     printf("Enter second number:");
+//     scanf("%d%d", &c2.x, &c2.y);
+//     printf("first complex number %d+ %di\n", c1.x, c1.y);
+//     printf("first complex number %d+ %di\n", c2.x, c2.y);
+//     printf("Sum = %d + %di", c1.x + c2.x, c1.y + c2.y);
+// }
