@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdio.h>
+typedef struct complex{
+    int x;
+    int y;
+
+
+}complex;
+int main(){
+    complex c1={3,5};
+    complex *p=&c1;
+    printf("complex number %d+ %di\n",c1.x,c1.y);
+    printf("complex number %d+ %di\n",p->x,p->y);
+
+}
