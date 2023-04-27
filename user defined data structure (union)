@@ -1,0 +1,29 @@
+#include<stdio.h>
+// typedef union student{// union is used to memory optimization
+//     int roll;
+//     float marks;
+
+// }stu;
+// int main(){
+//     //student s1={10,45};
+
+//     stu s1;
+//     s1.roll=20;// if we are assigning only one variable then it is fine but if we are using two variables at tyhe same time then the value of that variable will be printed whose size is bigger
+//     s1.marks=35.5;
+//     printf("%d %f",s1.roll,s1.marks);
+
+// }
+// typedef union point{
+//     int x;
+//     int y;
+
+// }point;
+
+// int main(){
+//     point p;
+//     p.x=10;
+//     printf("%d %d \n",p.x,p.y);//
+//     p.y=20;
+//     printf("%d %d ",p.x,p.y);
+
+// }
