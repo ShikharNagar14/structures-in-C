@@ -1,0 +1,65 @@
+#include<stdio.h>
+// typedef struct{
+//     int x;
+//     int y;
+
+// }point;
+// int main(){
+//     point p;
+//     point *ptr=&p;
+//     // p.x=10;
+//    // p.y=20;
+//    ptr->x=10;
+//    ptr->y=20;
+//    //printf("%d,%d",ptr->x,ptr->y);
+//     printf("%d,%d",p.x,p.y);
+
+// }
+// typedef struct{
+//     int x;
+//     int y;
+
+// }point;
+// void swap(point *p)//point p 
+// {
+//     //int temp=p.x;
+//    // p.x=p.y;
+//    // p.y=temp;
+//    int temp=p->x;
+//    p->x=p->y;
+//    p->y=temp;
+// }
+// int main(){
+//     point p={10,20};
+//     printf("(%d,%d)\n",p.x,p.y);
+//    swap(&p);
+//     printf("(%d,%d)\n",p.x,p.y);
+// }
+typedef struct node{
+    int data;
+     struct node *ptr;
+
+}node;
+
+int main(){
+    node* head=malloc(sizeof(node));
+    head->data=10;
+    head->ptr=malloc(sizeof(node));
+    head->ptr->data=20;
+    head->ptr->ptr=malloc(sizeof(node));
+    head->ptr->ptr->data=30;
+    head->ptr->ptr->ptr=NULL;
+    // printf("%d ",head->data);
+    // printf("%d ",head->ptr->data);
+    // printf("%d",head->ptr->ptr->data);
+
+
+
+while(head){
+    printf("%d ",head->data);
+    head=head->ptr;
+
+}
+}
+
+
